@@ -95,12 +95,14 @@
         },{
             title:this.L('Description'),
             key:'description'
-        },{
-            title:this.L('IsStatic'),
-            render:(h:any,params:any)=>{
-                return h('span',params.row.isStatic?this.L('Yes'):this.L('No'))
-            }
-        },{
+        },
+        // {
+        //     title:this.L('IsStatic'),
+        //     render:(h:any,params:any)=>{
+        //         return h('span',params.row.isStatic?this.L('Yes'):this.L('No'))
+        //     }
+        // },
+        {
             title:this.L('Actions'),
             key:'Actions',
             width:150,

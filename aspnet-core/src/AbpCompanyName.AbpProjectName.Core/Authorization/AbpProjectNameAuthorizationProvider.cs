@@ -15,7 +15,7 @@ namespace AbpCompanyName.AbpProjectName.Authorization
             #endregion
 
             #region 商品管理
-            context.CreatePermission(PermissionNames.Pages_PdBrand, L("PdBrand"));
+            context.CreatePermission(PermissionNames.Pages_PdBrand, new FixedLocalizableString("品牌管理"));
             #endregion
         }
 

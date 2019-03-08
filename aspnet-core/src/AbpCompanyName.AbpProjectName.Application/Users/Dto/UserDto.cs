@@ -10,6 +10,12 @@ namespace AbpCompanyName.AbpProjectName.Users.Dto
     [AutoMapFrom(typeof(User))]
     public class UserDto : EntityDto<long>
     {
+        public UserDto()
+        {
+            Surname = string.Empty;
+            EmailAddress = string.Empty;
+        }
+
         [Required]
         [StringLength(AbpUserBase.MaxUserNameLength)]
         public string UserName { get; set; }
@@ -18,12 +24,12 @@ namespace AbpCompanyName.AbpProjectName.Users.Dto
         [StringLength(AbpUserBase.MaxNameLength)]
         public string Name { get; set; }
 
-        [Required]
+        //[Required]
         [StringLength(AbpUserBase.MaxSurnameLength)]
         public string Surname { get; set; }
 
-        [Required]
-        [EmailAddress]
+        //[Required]
+        //[EmailAddress]
         [StringLength(AbpUserBase.MaxEmailAddressLength)]
         public string EmailAddress { get; set; }
 

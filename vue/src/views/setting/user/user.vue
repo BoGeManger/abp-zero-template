@@ -139,12 +139,14 @@
             render:(h:any,params:any)=>{
                 return h('span',new Date(params.row.creationTime).toLocaleDateString())
             }
-        },{
-            title:this.L('LastLoginTime'),
-            render:(h:any,params:any)=>{
-                return h('span',new Date(params.row.lastLoginTime).toLocaleString())
-            }
-        },{
+        },
+        // {
+        //     title:this.L('LastLoginTime'),
+        //     render:(h:any,params:any)=>{
+        //         return h('span',new Date(params.row.lastLoginTime).toLocaleString())
+        //     }
+        // },
+        {
             title:this.L('Actions'),
             key:'Actions',
             width:150,
